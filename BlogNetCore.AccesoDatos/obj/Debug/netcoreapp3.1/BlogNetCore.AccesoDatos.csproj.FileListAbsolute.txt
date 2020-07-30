@@ -1,0 +1,5 @@
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.AccesoDatos\bin\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.deps.json
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.AccesoDatos\bin\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.AccesoDatos\obj\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.AccesoDatos\obj\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.AccesoDatos\obj\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.AssemblyInfo.cs

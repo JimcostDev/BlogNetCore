@@ -1,0 +1,5 @@
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\bin\Debug\netcoreapp3.1\BlogNetCore.Models.deps.json
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\bin\Debug\netcoreapp3.1\BlogNetCore.Models.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.AssemblyInfoInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.AssemblyInfo.cs
