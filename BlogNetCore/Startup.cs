@@ -32,8 +32,10 @@ namespace BlogNetCore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
+            //agregar .AddRazorRuntimeCompilation() para visualizar cambios al momemto de refrescar la pagina.
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
