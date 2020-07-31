@@ -64,7 +64,8 @@ namespace BlogNetCore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    //agregar {area:Cliente}/
+                    pattern: "{area=Cliente}/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

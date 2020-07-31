@@ -9,6 +9,7 @@ using BlogNetCore.Models;
 
 namespace BlogNetCore.Controllers
 {
+    [Area("Cliente")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
