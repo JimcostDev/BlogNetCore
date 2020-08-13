@@ -26,7 +26,6 @@
         "dependencies": {
           "BlogNetCore.AccesoDatos": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.7",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.7",
           "Microsoft.AspNetCore.Identity.UI": "3.1.7",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.7",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.7",
