@@ -10358,11 +10358,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore\\BlogNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore\\BlogNetCore.csproj",
       "projectName": "BlogNetCore",
-      "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore\\BlogNetCore.csproj",
+      "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore\\BlogNetCore.csproj",
       "packagesPath": "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore\\obj\\",
+      "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -10382,8 +10382,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj": {
-              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj"
+            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj": {
+              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj"
             }
           }
         }

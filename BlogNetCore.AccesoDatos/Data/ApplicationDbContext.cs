@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using BlogNetCore.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,7 @@ namespace BlogNetCore.AccesoDatos.Data
             : base(options)
         {
         }
+        //contexto donde deben de ir mapeadas cada una de las tablas
+        public DbSet<Categoria> Categoria { get; set; }
     }
 }

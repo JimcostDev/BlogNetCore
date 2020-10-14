@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t6NBT5M5xFahZingpwnfcnehK3muy/LiSlXQO14vfXXfx7xQ5Afvu635/KsIjtQYarzmEcZlPRZAa30lVmpTPg==",
+  "dgSpecHash": "RxE3JTvtc8SER3nxDn5qivj80Daf05lC99K92yX7owLaYVzceOqPn0Qha/42xI0Ntzv2CqGTh+GdLgvRR4yfCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
+  "projectFilePath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

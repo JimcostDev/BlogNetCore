@@ -9464,11 +9464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
+      "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
       "projectName": "BlogNetCore.AccesoDatos",
-      "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
+      "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\BlogNetCore.AccesoDatos.csproj",
       "packagesPath": "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.AccesoDatos\\obj\\",
+      "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.AccesoDatos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -9488,11 +9488,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {
-              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj"
+            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {
+              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj"
             },
-            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {
-              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj"
+            "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {
+              "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj"
             }
           }
         }

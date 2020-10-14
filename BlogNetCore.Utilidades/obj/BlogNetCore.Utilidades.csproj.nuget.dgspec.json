@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {}
+    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {
+    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj",
         "projectName": "BlogNetCore.Utilidades",
-        "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj",
+        "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\BlogNetCore.Utilidades.csproj",
         "packagesPath": "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Utilidades\\obj\\",
+        "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

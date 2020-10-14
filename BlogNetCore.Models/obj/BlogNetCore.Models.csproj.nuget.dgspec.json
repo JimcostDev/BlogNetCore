@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {}
+    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {
+    "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj",
         "projectName": "BlogNetCore.Models",
-        "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj",
+        "projectPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\BlogNetCore.Models.csproj",
         "packagesPath": "C:\\Users\\Ronaldo Jimenez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Proyectos\\BlogNetCore\\BlogNetCore.Models\\obj\\",
+        "outputPath": "C:\\Users\\Ronaldo Jimenez\\Desktop\\Cursos\\Udemy\\ASP.NET Core\\BlogNetCore\\BlogNetCore.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
