@@ -7,3 +7,12 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Utilid
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.AssemblyInfo.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.dll
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.pdb
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\bin\Debug\netcoreapp3.1\BlogNetCore.Utilidades.deps.json
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\bin\Debug\netcoreapp3.1\BlogNetCore.Utilidades.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\bin\Debug\netcoreapp3.1\BlogNetCore.Utilidades.pdb
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.AssemblyInfoInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.AssemblyInfo.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.pdb

@@ -7,3 +7,12 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.csproj.CoreCompileInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.dll
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Proyectos\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.pdb
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\bin\Debug\netcoreapp3.1\BlogNetCore.Models.deps.json
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\bin\Debug\netcoreapp3.1\BlogNetCore.Models.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\bin\Debug\netcoreapp3.1\BlogNetCore.Models.pdb
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.csprojAssemblyReference.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.AssemblyInfoInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.AssemblyInfo.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.csproj.CoreCompileInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.dll
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Models\obj\Debug\netcoreapp3.1\BlogNetCore.Models.pdb
