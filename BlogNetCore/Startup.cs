@@ -12,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlogNetCore.AccesoDatos.Data;
+using BlogNetCore.AccesoDatos.Data.Repository;
+using BlogNetCore.AccesoDatos.Data.Repository.Implements;
 
 namespace BlogNetCore
 {
@@ -35,6 +37,8 @@ namespace BlogNetCore
             //agregar .AddRazorRuntimeCompilation() para visualizar cambios al momemto de refrescar la pagina.
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
+            //agregar contenedor de trabajo
+            services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
 
         }
 

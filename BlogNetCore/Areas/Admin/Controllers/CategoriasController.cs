@@ -19,52 +19,7 @@ namespace BlogCore.Areas.Admin.Controllers
         {
             return View();
         }
-        /*********************************** CREAR CATEGORIA ********************************************/
-        //mostar formulario para crear una nueva categoria, por ello es de tipo HttpGet
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Categoria categoria)
-        {
-            //validar el modelo - validar que los campos obligatorios se envien (DataAnnontations)
-            if (ModelState.IsValid)
-            {
-                _contenedorTrabajo.Categoria.Add(categoria);
-                _contenedorTrabajo.Save();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(categoria);
-        }
-        /*********************************** EDITAR CATEGORIA ********************************************/
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            Categoria categoria = new Categoria();
-            categoria = _contenedorTrabajo.Categoria.Get(id);//buscar categoria por su id
-            if (categoria == null)
-            {
-                return NotFound();
-            }
-            return View(categoria);
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(Categoria categoria)
-        {
-            //validar el modelo - validar que los campos obligatorios se envien (DataAnnontations)
-            if (ModelState.IsValid)
-            {
-                _contenedorTrabajo.Categoria.Update(categoria);
-                _contenedorTrabajo.Save();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(categoria);
-        }
+        
         #region  LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD
         [HttpGet]
