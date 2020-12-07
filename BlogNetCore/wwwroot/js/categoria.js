@@ -28,7 +28,7 @@ function cargarDatatable() {
                             <i class='fas fa-edit'></i> Editar
                             </a>
                             &nbsp;
-                            <a onclick=Delete("/Admin/Categorias/Delete/${data}") class='btn btn-danger text-white' style='cursor:pointer; width:100px;'>
+                            <a onclick=Delete("/Admin/Categorias/Delete/${data}") class='btn btn-warning text-white' style='cursor:pointer; width:100px;'>
                             <i class='fas fa-trash-alt'></i> Borrar
                             </a>
                             `;
@@ -49,7 +49,7 @@ function Delete(url) {
         text: "Este contenido no se puede recuperar!",
         type: "warning",
         showCancelButton: true,
-        confirmButtonColor: "#DD6B55",
+        confirmButtonColor: "#A03D14",
         confirmButtonText: "Si, borrar!",
         closeOnconfirm: true
     }, function () {

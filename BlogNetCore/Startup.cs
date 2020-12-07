@@ -34,7 +34,7 @@ namespace BlogNetCore
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            //agregar .AddRazorRuntimeCompilation() para visualizar cambios al momemto de refrescar la pagina.
+            ////agregar .AddRazorRuntimeCompilation() para visualizar cambios al momemto de refrescar la pagina.
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
             //agregar contenedor de trabajo
