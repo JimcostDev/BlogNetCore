@@ -43,6 +43,21 @@ namespace BlogCore.Areas.Admin.Controllers
 
         #endregion
 
+        #region EDIT
+        /*********************************** EDITAR CATEGORIA ********************************************/
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Categoria categoria = new Categoria();
+            categoria = _contenedorTrabajo.Categoria.Get(id);//buscar categoria por su id
+            if (categoria == null)
+            {
+                return NotFound();
+            }
+            return View(categoria);
+        }
+        #endregion
+
 
         #region  LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD

@@ -408,6 +408,7 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.AccesoDatos.pdb
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.Models.pdb
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.Utilidades.pdb
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csprojAssemblyReference.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.AssemblyInfoInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.AssemblyInfo.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csproj.CoreCompileInputs.cache
@@ -418,6 +419,7 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.TagHelpers.input.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.TagHelpers.output.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.RazorCoreGenerate.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Index.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
@@ -430,6 +432,7 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.RazorTargetAssemblyInfo.cache
@@ -441,6 +444,3 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.dll
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.pdb
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.genruntimeconfig.cache
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csprojAssemblyReference.cache
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs

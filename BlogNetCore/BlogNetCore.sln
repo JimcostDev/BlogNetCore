@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogNetCore", "BlogNetCore.csproj", "{B86C2323-C623-4C0F-9A21-3B2DABAF08D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogNetCore", "BlogNetCore.csproj", "{B86C2323-C623-4C0F-9A21-3B2DABAF08D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogNetCore.AccesoDatos", "..\BlogNetCore.AccesoDatos\BlogNetCore.AccesoDatos.csproj", "{FBD53DF4-EA5B-4399-8993-6626E4A357DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogNetCore.AccesoDatos", "..\BlogNetCore.AccesoDatos\BlogNetCore.AccesoDatos.csproj", "{FBD53DF4-EA5B-4399-8993-6626E4A357DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogNetCore.Models", "..\BlogNetCore.Models\BlogNetCore.Models.csproj", "{AC8701EC-C471-4565-87E9-A8CF45C5DD4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogNetCore.Models", "..\BlogNetCore.Models\BlogNetCore.Models.csproj", "{AC8701EC-C471-4565-87E9-A8CF45C5DD4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogNetCore.Utilidades", "..\BlogNetCore.Utilidades\BlogNetCore.Utilidades.csproj", "{77F484E7-E2EB-44D9-87B3-9ED09100011F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogNetCore.Utilidades", "..\BlogNetCore.Utilidades\BlogNetCore.Utilidades.csproj", "{77F484E7-E2EB-44D9-87B3-9ED09100011F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
