@@ -27,8 +27,20 @@ namespace BlogCore.Areas.Admin.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Categoria categoria)
+        {
+            //validar el modelo - validar que los campos obligatorios se envien (DataAnnontations)
+            if (ModelState.IsValid)
+            {
+                _contenedorTrabajo.Categoria.Add(categoria);
+                _contenedorTrabajo.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(categoria);
+        }
 
-        
         #endregion
 
 
