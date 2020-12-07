@@ -19,7 +19,19 @@ namespace BlogCore.Areas.Admin.Controllers
         {
             return View();
         }
+        #region CREATE
+        /*********************************** CREAR CATEGORIA ********************************************/
+        //mostar formulario para crear una nueva categoria, por ello es de tipo HttpGet
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         
+        #endregion
+
+
         #region  LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD
         [HttpGet]
