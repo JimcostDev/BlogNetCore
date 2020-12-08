@@ -15,5 +15,6 @@ namespace BlogNetCore.AccesoDatos.Data
         }
         //contexto donde deben de ir mapeadas cada una de las tablas
         public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Articulo> Articulo { get; set; }
     }
 }
