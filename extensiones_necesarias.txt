@@ -6,3 +6,6 @@
 -- Microsoft.Extensions.Identity.Stores -> BlogNetCore.AccesoDatos y BlogNetCore.Models
 -- Microsoft.AspNetCore.Identity.EntityFrameworkCore -> BlogNetCore.AccesoDatos
 -- Microsoft.EntityFrameworkCore.SqlServer -> BlogNetCore.AccesoDatos
+
+Nota:
+--Microsoft.EntityFrameworkCore.Tools --> Para crear migraciones

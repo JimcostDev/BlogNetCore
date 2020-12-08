@@ -15,7 +15,11 @@ namespace BlogNetCore.Models
         [Display(Name = "Nombre artículo")]
         public string Nombre { get; set; }
 
-        
+        [Required(ErrorMessage = "Ingresa la descripción para el artículo")]
+        [Display(Name = "Descripción artículo")]
+        public string Descripcion { get; set; }
+
+
         [Display(Name = "Fecha de creación")]
         public string FechaCreacion { get; set; }
 
