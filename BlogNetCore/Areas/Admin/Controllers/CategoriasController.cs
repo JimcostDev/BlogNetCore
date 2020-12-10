@@ -93,7 +93,8 @@ namespace BlogCore.Areas.Admin.Controllers
             _contenedorTrabajo.Save();
             return Json(new { success = true, message = "Se elimino categoría correctamente." });
 
-            #endregion
+            
         }
+        #endregion
     }
 }
