@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BlogNetCore.AccesoDatos.Data.Repository;
+﻿using BlogNetCore.AccesoDatos.Data.Repository;
 using BlogNetCore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,9 +21,8 @@ namespace BlogNetCore.Areas.Admin.Controllers
             {
                 Articulo = new Models.Articulo(),
                 ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias()
-        };
-        return View(articuloViewModel);
-            
+            };
+            return View(articuloViewModel);
         }
         #region  LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD
