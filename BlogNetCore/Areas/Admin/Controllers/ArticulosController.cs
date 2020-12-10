@@ -1,10 +1,21 @@
+<<<<<<< HEAD
 ﻿using BlogNetCore.AccesoDatos.Data.Repository;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using BlogNetCore.AccesoDatos.Data.Repository;
+>>>>>>> 1326d8e62ff5a1da37f3a8bd91b58e84aa4cd109
 using BlogNetCore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogNetCore.Areas.Admin.Controllers
 {
+<<<<<<< HEAD
     [Area("Admin")]
+=======
+>>>>>>> 1326d8e62ff5a1da37f3a8bd91b58e84aa4cd109
     public class ArticulosController : Controller
     {
         private readonly IContenedorTrabajo _contenedorTrabajo;
@@ -22,8 +33,14 @@ namespace BlogNetCore.Areas.Admin.Controllers
             {
                 Articulo = new Models.Articulo(),
                 ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias()
+<<<<<<< HEAD
             };
             return View(articuloViewModel);
+=======
+        };
+        return View(articuloViewModel);
+            
+>>>>>>> 1326d8e62ff5a1da37f3a8bd91b58e84aa4cd109
         }
         #region  LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD
