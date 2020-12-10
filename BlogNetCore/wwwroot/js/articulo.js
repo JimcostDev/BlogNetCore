@@ -10,7 +10,7 @@ function cargarDatatable() {
     dataTable = $("#tblArticulos").DataTable({
         //CUERPO DEL DATATABLE
         "ajax": {
-            "url": "/admin/Articulos/GetAll",//RUTA DE DONDE OBTIENE LOS DATOS
+            "url": "/admin/articulos/GetAll",//RUTA DE DONDE OBTIENE LOS DATOS
             "type": "GET",//COMO VAMOS A CONSULTAR DATOS ES DE TIPO GET
             "datatype": "json"
         },

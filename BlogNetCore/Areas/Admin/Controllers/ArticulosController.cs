@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BlogNetCore.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class ArticulosController : Controller
     {
         private readonly IContenedorTrabajo _contenedorTrabajo;
