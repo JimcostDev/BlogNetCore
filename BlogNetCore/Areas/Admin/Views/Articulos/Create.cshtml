@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-8">
                     @Html.DropDownListFor(m => m.Articulo.CategoriaId, Model.ListaCategorias,
-                   "-Por favor Seleccione una categoría-", new { @class = "form-control"})
+                   "-Por favor Seleccione una categoría-", new { @class = "form-control" })
                 </div>
             </div>
             <!--**************************************IMAGEN ARTÍCULO****************************************-->
@@ -61,6 +61,14 @@
         </div>
     </div>
 </form>
-
+@section Scripts{
+    <script src="https://cdn.tiny.cloud/1/ay4mpzsq68niiip8o0eiftvzc2l9n4w70giwfc7pil2hfr0h/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format'
+        });
+    </script>
 
 
