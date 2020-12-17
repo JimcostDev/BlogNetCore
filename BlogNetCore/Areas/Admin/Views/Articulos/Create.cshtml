@@ -1,0 +1,66 @@
+﻿@model BlogNetCore.Models.ViewModels.ArticuloViewModel
+
+@{
+    ViewData["Title"] = "Crear artículo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h3 class="text-center">Crear una nuevo artículo</h3>
+<hr />
+<!--para subir data (img) agregramos al form enctype="multipart/form-data"-->
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <!--********************************NOMBRE ARTÍCULO**********************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Articulo.Nombre" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Articulo.Nombre" class="form-control" />
+                    <span asp-validation-for="Articulo.Nombre" class="text-danger"></span>
+                </div>
+            </div>
+            <!--**************************************DESCRIPCIÓN  ARTÍCULO****************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Articulo.Descripcion" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Articulo.Descripcion" class="form-control" style="height:300px"></textarea>
+                    <span asp-validation-for="Articulo.Descripcion" class="text-danger"></span>
+                </div>
+            </div>
+            <!--********************************CATEGORÍA ARTÍCULO**********************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Articulo.CategoriaId" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Articulo.CategoriaId, Model.ListaCategorias,
+                   "-Por favor Seleccione una categoría-", new { @class = "form-control"})
+                </div>
+            </div>
+            <!--**************************************IMAGEN ARTÍCULO****************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Articulo.UrlImagen" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="archivos" id="subidaArchivo" class="form-control" />
+                </div>
+            </div>
+            <!--****************************************CREAR_VOLVER_BTN**************************************-->
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_VistaCrearVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+

@@ -21,6 +21,13 @@ namespace BlogNetCore.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        #region CREATE
+        [HttpGet]
+        public IActionResult Create()
+        {
             //instaciamos el viewmodel para poder obtener la informacion de categoria
             ArticuloViewModel articuloViewModel = new ArticuloViewModel()
             {
@@ -29,8 +36,9 @@ namespace BlogNetCore.Areas.Admin.Controllers
 
             };
             return View(articuloViewModel);
+        } 
+        #endregion
 
-        }
         #region LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD
         [HttpGet]
