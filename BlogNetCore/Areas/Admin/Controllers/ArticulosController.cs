@@ -72,6 +72,7 @@ namespace BlogNetCore.Areas.Admin.Controllers
                     return RedirectToAction(nameof(Index));
                 }
             }
+            articuloViewModel.ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias();
             return View(articuloViewModel.Articulo);
         }
         #endregion
