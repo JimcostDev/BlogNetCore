@@ -73,8 +73,26 @@ namespace BlogNetCore.Areas.Admin.Controllers
                 }
             }
             articuloViewModel.ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias();
-            return View(articuloViewModel.Articulo);
+            return View(articuloViewModel);
         }
+        #endregion
+        #region EDIT
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            //instaciamos el viewmodel para poder obtener la informacion de categoria
+            ArticuloViewModel articuloViewModel = new ArticuloViewModel()
+            {
+                Articulo = new Models.Articulo(),
+                ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias()
+
+            };
+            if (id != null)
+            {
+                articuloViewModel.Articulo = _contenedorTrabajo.Articulo.Get(id.GetValueOrDefault());
+            }
+            return View(articuloViewModel);
+        } 
         #endregion
 
         #region LLAMADAS A LA API
