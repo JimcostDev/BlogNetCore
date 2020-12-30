@@ -9,6 +9,7 @@ namespace BlogNetCore.AccesoDatos.Data.Repository
         //aqui van todas mis entidades (unidad contenedora)
         ICategoriaRepository Categoria { get; }
         IArticuloRepository Articulo { get; }
+        ISliderRepository Slider { get; }
         void Save();
     }
 }
