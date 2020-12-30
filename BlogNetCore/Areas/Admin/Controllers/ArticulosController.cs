@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace BlogNetCore.Areas.Admin.Controllers
 {
@@ -92,7 +93,61 @@ namespace BlogNetCore.Areas.Admin.Controllers
                 articuloViewModel.Articulo = _contenedorTrabajo.Articulo.Get(id.GetValueOrDefault());
             }
             return View(articuloViewModel);
-        } 
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(ArticuloViewModel articuloViewModel)
+        {
+            if (ModelState.IsValid) 
+            {
+                #region SUBIR IMAGEN
+                string rutaPrincipal = _hostingEnvironment.WebRootPath; // wwwroot
+                var archivos = HttpContext.Request.Form.Files;
+                //obtener por su id el articulo
+                var articuloDesdeDb = _contenedorTrabajo.Articulo.Get(articuloViewModel.Articulo.Id);
+
+                if (archivos.Count() > 0)
+                {
+                    //Editar imagen
+                    string nombreArchivo = Guid.NewGuid().ToString();
+                    var subidas = Path.Combine(rutaPrincipal, @"imagenes\articulos");
+                    var extension = Path.GetExtension(archivos[0].FileName);
+                    var nuevaExtension = Path.GetExtension(archivos[0].FileName);
+
+                    var rutaImagen = Path.Combine(rutaPrincipal, articuloDesdeDb.UrlImagen.TrimStart('\\'));
+
+                    //Remplazar imagen
+                    if (System.IO.File.Exists(rutaImagen))
+                    {
+                        System.IO.File.Delete(rutaImagen);
+                    }
+
+                    //subimos nuevamente el archivo
+                    using (var fileStreams = new FileStream(Path.Combine(subidas, nombreArchivo + nuevaExtension), FileMode.Create))
+                    {
+                        archivos[0].CopyTo(fileStreams);
+                    }
+                    articuloViewModel.Articulo.UrlImagen = @"\imagenes\articulos\" + nombreArchivo + nuevaExtension;
+                    articuloViewModel.Articulo.FechaCreacion = DateTime.Now.ToString();
+                    #endregion
+
+                    //guardar
+                    _contenedorTrabajo.Articulo.Update(articuloViewModel.Articulo);
+                    _contenedorTrabajo.Save();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    //cuando la imagen ya existe y no se reemplaza, debe conservar la que ya tiene
+                    articuloViewModel.Articulo.UrlImagen = articuloDesdeDb.UrlImagen;
+                    //guardar
+                    _contenedorTrabajo.Articulo.Update(articuloViewModel.Articulo);
+                    _contenedorTrabajo.Save();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            return View();
+        }
         #endregion
 
         #region LLAMADAS A LA API
