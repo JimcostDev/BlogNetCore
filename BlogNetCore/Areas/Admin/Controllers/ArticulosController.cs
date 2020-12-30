@@ -31,6 +31,7 @@ namespace BlogNetCore.Areas.Admin.Controllers
         }
 
         #region CREATE
+        /*********************************** CREAR ARTICULO ********************************************/
         [HttpGet]
         public IActionResult Create()
         {
@@ -78,6 +79,7 @@ namespace BlogNetCore.Areas.Admin.Controllers
         }
         #endregion
         #region EDIT
+        /*********************************** EDITAR ARTICULO ********************************************/
         [HttpGet]
         public IActionResult Edit(int? id)
         {
@@ -156,7 +158,31 @@ namespace BlogNetCore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             return Json(new { data = _contenedorTrabajo.Articulo.GetAll(includeProperties: "Categoria") });
-        } 
+        }
+        /*********************************** ELIMINAR ARTICULO ********************************************/
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+
+            var objFromDb = _contenedorTrabajo.Articulo.Get(id);//buscar categoria por su id
+            string rutaDirectorioPrincipal = _hostingEnvironment.WebRootPath; // wwwroot
+            var rutaImagen = Path.Combine(rutaDirectorioPrincipal, objFromDb.UrlImagen.TrimStart('\\'));
+            //eliminar imagen
+            if (System.IO.File.Exists(rutaImagen))
+            {
+                System.IO.File.Delete(rutaImagen);
+            }
+
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error al borrar artículo" });
+            }
+            _contenedorTrabajo.Articulo.Remove(objFromDb);
+            _contenedorTrabajo.Save();
+            return Json(new { success = true, message = "Se elimino artículo correctamente." });
+
+
+        }
         #endregion
     }
 }
