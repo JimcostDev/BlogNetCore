@@ -26,6 +26,14 @@ namespace BlogNetCore.Areas.Admin.Controllers
         {
             return View();
         }
+        #region CREATE
+        /*********************************** CREAR ARTICULO ********************************************/
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        #endregion
 
         #region LLAMADAS A LA API
         //OBTENER TODOS LOS DATOS DE LA ENTIDAD

@@ -1,0 +1,64 @@
+﻿@model BlogNetCore.Models.Slider
+
+@{
+    ViewData["Title"] = "Crear slider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h3 class="text-center">Crear un nuevo slider</h3>
+<hr />
+<!--para subir data (img) agregramos al form enctype="multipart/form-data"-->
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <!--********************************NOMBRE SLIDER**********************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Nombre" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+            </div>
+            <!--**************************************ESTADO SLIDER****************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Estado" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Estado" class="form-control" style="height:300px"></textarea>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+            </div>
+            <!--**************************************IMAGEN SLIDER****************************************-->
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="UrlImagen" class="control-label"></label>
+                </div>
+                <div class="col-8">
+                    <input type="file" name="archivos" id="subidaArchivo" class="form-control" />
+                </div>
+            </div>
+            <!--****************************************CREAR_VOLVER_BTN**************************************-->
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_VistaCrearVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts{
+    <script src="https://cdn.tiny.cloud/1/ay4mpzsq68niiip8o0eiftvzc2l9n4w70giwfc7pil2hfr0h/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'lists',
+            menubar: 'file edit format'
+        });
+    </script>
+}
+
