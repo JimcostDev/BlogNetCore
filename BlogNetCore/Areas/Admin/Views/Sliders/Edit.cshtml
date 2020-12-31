@@ -1,17 +1,19 @@
 ﻿@model BlogNetCore.Models.Slider
 
 @{
-    ViewData["Title"] = "Crear slider";
+    ViewData["Title"] = "Editar slider";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <br />
-<h3 class="text-center">Crear un nuevo slider</h3>
+<h3 class="text-center">Editar slider</h3>
 <hr />
 <!--para subir data (img) agregramos al form enctype="multipart/form-data"-->
-<form asp-action="Create" method="post" enctype="multipart/form-data">
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
     <div class="row px-2 mx-2 border">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <!--ENVIAR ID COMO CAMPO OCULTO-->
+        <input type="hidden" asp-for="Id" />
         <div class="col-10 offset-1 mt-4">
             <!--********************************NOMBRE SLIDER**********************************************-->
             <div class="form-group row">
@@ -29,7 +31,7 @@
                     <label asp-for="Estado" class="control-label"></label>
                 </div>
                 <div class="col-md-1">
-                    <input asp-for="Estado" class="form-control"/>
+                    <input asp-for="Estado" class="form-control" />
                     <span asp-validation-for="Estado" class="text-danger"></span>
                 </div>
             </div>
@@ -42,13 +44,22 @@
                     <input type="file" name="archivos" id="subidaArchivo" class="form-control" />
                 </div>
             </div>
-            <!--****************************************CREAR_VOLVER_BTN**************************************-->
+            <!--**************************************** BTN **************************************-->
             <div class="form-group row">
                 <div class="col-8 offset-4">
-                    <partial name="_VistaCrearVolver" />
+
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Id">Actualizar</button>
+                        </div>
+                        <div class="col">
+                            <a asp-action="Index" class="btn btn-success form-control">Volver a la lista</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </form>
+
 

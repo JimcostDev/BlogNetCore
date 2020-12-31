@@ -58,6 +58,7 @@ namespace BlogNetCore.Areas.Admin.Controllers
                     slider.UrlImagen = @"\imagenes\sliders\" + nombreArchivo + extension;
                     #endregion
 
+                    
                     //guardar
                     _contenedorTrabajo.Slider.Add(slider);
                     _contenedorTrabajo.Save();
@@ -66,6 +67,72 @@ namespace BlogNetCore.Areas.Admin.Controllers
             }
             
             return View(slider);
+        }
+        #endregion
+        #region EDIT
+        /*********************************** EDITAR ARTICULO ********************************************/
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            Slider slider = new Slider();
+            if (id != null)
+            {
+                slider = _contenedorTrabajo.Slider.Get(id.GetValueOrDefault());
+            }
+            return View(slider);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Slider slider)
+        {
+            if (ModelState.IsValid)
+            {
+                #region SUBIR IMAGEN
+                string rutaPrincipal = _hostingEnvironment.WebRootPath; // wwwroot
+                var archivos = HttpContext.Request.Form.Files;
+                //obtener por su id el articulo
+                var objDesdeDb = _contenedorTrabajo.Slider.Get(slider.Id);
+
+                if (archivos.Count() > 0)
+                {
+                    //Editar imagen
+                    string nombreArchivo = Guid.NewGuid().ToString();
+                    var subidas = Path.Combine(rutaPrincipal, @"imagenes\sliders");
+                    var extension = Path.GetExtension(archivos[0].FileName);
+                    var nuevaExtension = Path.GetExtension(archivos[0].FileName);
+
+                    var rutaImagen = Path.Combine(rutaPrincipal, objDesdeDb.UrlImagen.TrimStart('\\'));
+
+                    //Remplazar imagen
+                    if (System.IO.File.Exists(rutaImagen))
+                    {
+                        System.IO.File.Delete(rutaImagen);
+                    }
+
+                    //subimos nuevamente el archivo
+                    using (var fileStreams = new FileStream(Path.Combine(subidas, nombreArchivo + nuevaExtension), FileMode.Create))
+                    {
+                        archivos[0].CopyTo(fileStreams);
+                    }
+                    slider.UrlImagen = @"\imagenes\sliders\" + nombreArchivo + nuevaExtension;
+                    #endregion
+
+                    //guardar
+                    _contenedorTrabajo.Slider.Update(slider);
+                    _contenedorTrabajo.Save();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    //cuando la imagen ya existe y no se reemplaza, debe conservar la que ya tiene
+                    slider.UrlImagen = objDesdeDb.UrlImagen;
+                    //guardar
+                    _contenedorTrabajo.Slider.Update(slider);
+                    _contenedorTrabajo.Save();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            return View();
         }
         #endregion
 
