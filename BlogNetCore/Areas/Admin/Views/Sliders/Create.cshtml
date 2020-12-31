@@ -29,7 +29,7 @@
                     <label asp-for="Estado" class="control-label"></label>
                 </div>
                 <div class="col-8">
-                    <textarea asp-for="Estado" class="form-control" style="height:300px"></textarea>
+                    <input asp-for="Estado" type="number" min="0" max="1" class="form-control" />
                     <span asp-validation-for="Estado" class="text-danger"></span>
                 </div>
             </div>
@@ -51,7 +51,7 @@
         </div>
     </div>
 </form>
-@section Scripts{
+@*@section Scripts{
     <script src="https://cdn.tiny.cloud/1/ay4mpzsq68niiip8o0eiftvzc2l9n4w70giwfc7pil2hfr0h/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         tinymce.init({
@@ -60,5 +60,5 @@
             menubar: 'file edit format'
         });
     </script>
-}
+}*@
 

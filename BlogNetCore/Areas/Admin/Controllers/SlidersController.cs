@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using BlogNetCore.AccesoDatos.Data.Repository;
+using BlogNetCore.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,11 +29,43 @@ namespace BlogNetCore.Areas.Admin.Controllers
             return View();
         }
         #region CREATE
-        /*********************************** CREAR ARTICULO ********************************************/
+        /*********************************** CREAR SLIDER ********************************************/
         [HttpGet]
         public IActionResult Create()
         {
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Slider slider)
+        {
+            if (ModelState.IsValid)
+            {
+                #region SUBIR IMAGEN
+                string rutaPrincipal = _hostingEnvironment.WebRootPath; // wwwroot
+                var archivos = HttpContext.Request.Form.Files;
+                if (slider.Id == 0)
+                {
+                    //nuevo Slider
+                    string nombreArchivo = Guid.NewGuid().ToString();
+                    var subidas = Path.Combine(rutaPrincipal, @"imagenes\sliders");
+                    var extension = Path.GetExtension(archivos[0].FileName);
+
+                    using (var fileStreams = new FileStream(Path.Combine(subidas, nombreArchivo + extension), FileMode.Create))
+                    {
+                        archivos[0].CopyTo(fileStreams);
+                    }
+                    slider.UrlImagen = @"\imagenes\sliders\" + nombreArchivo + extension;
+                    #endregion
+
+                    //guardar
+                    _contenedorTrabajo.Slider.Add(slider);
+                    _contenedorTrabajo.Save();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            
+            return View(slider);
         }
         #endregion
 
