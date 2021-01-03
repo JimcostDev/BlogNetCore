@@ -6,33 +6,30 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BlogNetCore.Models;
+using BlogNetCore.AccesoDatos.Data.Repository;
+using BlogNetCore.Models.ViewModels;
 
 namespace BlogNetCore.Controllers
 {
     [Area("Cliente")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IContenedorTrabajo _contenedorTrabajo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IContenedorTrabajo contenedorTrabajo)
         {
-            _logger = logger;
+            _contenedorTrabajo = contenedorTrabajo;
         }
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            //para poder tener tanto articulos como sliders en una misma pagina
+            HomeViewModel homeViewModel = new HomeViewModel()
+            {
+                Sliders = _contenedorTrabajo.Slider.GetAll(),
+                ListaArticulo = _contenedorTrabajo.Articulo.GetAll()
+            };
+            return View(homeViewModel);
         }
     }
 }

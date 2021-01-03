@@ -450,3 +450,4 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Edit.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Index.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Create.cshtml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Edit.cshtml.g.cs

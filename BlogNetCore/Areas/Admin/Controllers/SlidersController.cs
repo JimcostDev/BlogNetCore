@@ -143,6 +143,28 @@ namespace BlogNetCore.Areas.Admin.Controllers
         {
             return Json(new { data = _contenedorTrabajo.Slider.GetAll() });
         }
+        /*********************************** ELIMINAR SLIDER ********************************************/
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+
+            var objFromDb = _contenedorTrabajo.Slider.Get(id);//buscar categoria por su id
+            string rutaDirectorioPrincipal = _hostingEnvironment.WebRootPath; // wwwroot
+            var rutaImagen = Path.Combine(rutaDirectorioPrincipal, objFromDb.UrlImagen.TrimStart('\\'));
+            //eliminar imagen
+            if (System.IO.File.Exists(rutaImagen))
+            {
+                System.IO.File.Delete(rutaImagen);
+            }
+
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error al borrar slider" });
+            }
+            _contenedorTrabajo.Slider.Remove(objFromDb);
+            _contenedorTrabajo.Save();
+            return Json(new { success = true, message = "Se elimino slider correctamente." });
+        }
         #endregion
     }
 }
