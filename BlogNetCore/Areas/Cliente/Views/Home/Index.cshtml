@@ -3,3 +3,65 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!--SLIDER-->
+<header class="bg-dark">
+    @if (Model.Sliders.Count() > 0)
+    {
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                @{int count = 0;}
+                @foreach (var slider in Model.Sliders)
+                {
+                    var sliderDinamico = count++ == 0 ? "item active" : "item";
+                    <div class="carousel-item @sliderDinamico">
+                        <img src="@Url.Content(slider.UrlImagen)">
+                        <h1 class="text-dark text-center">@Html.Raw(slider.Nombre)</h1>
+                    </div>
+                }
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    }
+    else
+    {
+        <p>No hay sliders.</p>
+    }
+</header>
+<div class="row fondoTitulo mt-5">
+    <div class="col-sm-12 py-5">
+        <h1 class="text-center text-white">Últimos cursos y tutoriales</h1>
+    </div>
+</div>
+
+<!--ARTICULOS-->
+@if (Model.ListaArticulo.Count() > 0)
+{
+    <hr />
+    <div class="row">
+        @foreach (var articulo in Model.ListaArticulo.OrderBy(m => m.Id))
+        {
+            <div class="col-4">
+                <div class="card">
+                    <img src="@articulo.UrlImagen" class="img-thumbnail" width="100%" />
+                    <div class="card-body">
+                        <h5 class="text-center">@articulo.Nombre</h5>
+                        <p>@articulo.FechaCreacion</p>
+                        <a asp-action="Details" class="btn btn-success" style="border-radius:2px" asp-route-id="@articulo.Id">Más información</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No hay articulos.</p>
+}
+
