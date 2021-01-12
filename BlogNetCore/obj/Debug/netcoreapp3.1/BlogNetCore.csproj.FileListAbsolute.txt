@@ -411,9 +411,6 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csprojAssemblyReference.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.AssemblyInfoInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.AssemblyInfo.cs
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csproj.CoreCompileInputs.cache
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.RazorAssemblyInfo.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.RazorAssemblyInfo.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.TagHelpers.input.cache
@@ -450,3 +447,7 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Index.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Create.cshtml.g.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Edit.cshtml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Cliente\Views\Home\Details.cshtml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csproj.CoreCompileInputs.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cache
