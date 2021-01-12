@@ -31,5 +31,13 @@ namespace BlogNetCore.Controllers
             };
             return View(homeViewModel);
         }
+        /**************************** DETAILS ***********************************/
+        #region DETAILS
+        public IActionResult Details(int id)
+        {
+            var objDesdeDb = _contenedorTrabajo.Articulo.GetFirtsOrDefault(m => m.Id == id);
+            return View(objDesdeDb);
+        } 
+        #endregion
     }
 }
