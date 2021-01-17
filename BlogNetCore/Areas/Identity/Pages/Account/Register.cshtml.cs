@@ -57,7 +57,7 @@ namespace BlogNetCore.Areas.Identity.Pages.Account
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "Confirmar password")]
             [Compare("Password", ErrorMessage = "La contraseña y la confirmacion no coinciden.")]
             public string ConfirmPassword { get; set; }
 

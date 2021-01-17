@@ -1,4 +1,5 @@
 ﻿@page
+@using BlogNetCore.Utilidades
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
@@ -7,7 +8,7 @@
 <h1 class="text-center">Registrar un nuevo usuario</h1>
 
 <div class="row">
-    <div class="col-md-8 offset-4">
+    <div class="col-md-6 offset-3">
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h4>Crear una nueva cuenta.</h4>
             <hr />
@@ -47,6 +48,14 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
+
+            <div class="form-group row">
+                <div class="col-5">
+                    <input type="radio" name="radUsuarioRole" value="@CNT.Admin" />@CNT.Admin
+                    <input type="radio" name="radUsuarioRole" value="@CNT.Usuario" />@CNT.Usuario
+                </div>
+            </div>
+
             <button type="submit" class="btn btn-primary">Registrarse</button>
         </form>
     </div>
