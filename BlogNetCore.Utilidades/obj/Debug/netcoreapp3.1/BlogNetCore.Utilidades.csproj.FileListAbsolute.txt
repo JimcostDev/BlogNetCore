@@ -13,6 +13,5 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.csprojAssemblyReference.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.AssemblyInfoInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.AssemblyInfo.cs
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.dll
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore.Utilidades\obj\Debug\netcoreapp3.1\BlogNetCore.Utilidades.pdb

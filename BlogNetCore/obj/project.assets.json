@@ -3446,12 +3446,18 @@
       "BlogNetCore.Utilidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "3.1.10"
+        },
         "compile": {
           "bin/placeholder/BlogNetCore.Utilidades.dll": {}
         },
         "runtime": {
           "bin/placeholder/BlogNetCore.Utilidades.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
