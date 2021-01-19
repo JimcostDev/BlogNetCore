@@ -10,6 +10,7 @@ namespace BlogNetCore.AccesoDatos.Data.Repository
         ICategoriaRepository Categoria { get; }
         IArticuloRepository Articulo { get; }
         ISliderRepository Slider { get; }
+        IUsuarioRepository Usuario { get; }
         void Save();
     }
 }
