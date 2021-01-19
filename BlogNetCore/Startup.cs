@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using BlogNetCore.AccesoDatos.Data;
 using BlogNetCore.AccesoDatos.Data.Repository;
 using BlogNetCore.AccesoDatos.Data.Repository.Implements;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using BlogNetCore.Utilidades;
 
 namespace BlogNetCore
 {
@@ -33,7 +35,11 @@ namespace BlogNetCore
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+            services.AddSingleton<IEmailSender, EmailSender>();
+
+
             ////agregar .AddRazorRuntimeCompilation() para visualizar cambios al momemto de refrescar la pagina.
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();

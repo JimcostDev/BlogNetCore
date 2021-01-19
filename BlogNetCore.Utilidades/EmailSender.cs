@@ -8,6 +8,9 @@ namespace BlogNetCore.Utilidades
 {
     public class EmailSender : IEmailSender
     {
-        public Task SendEmailAsync
+        public Task SendEmailAsync(string email, string subject, string htmlMessage)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
