@@ -7,29 +7,26 @@ using System.Text;
 
 namespace BlogNetCore.AccesoDatos.Data.Repository.Implements
 {
-    public class CategoriaRepository : Repository<Categoria>, ICategoriaRepository
+    public class UsuarioRepository : Repository<ApplicationUser>, IUsuarioRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public CategoriaRepository(ApplicationDbContext db) : base(db)
+        public UsuarioRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
-        public IEnumerable<SelectListItem> GetListaCategorias()
+
+        public void BloquearUsuario(string IdUsuario)
         {
-            return _db.Categoria.Select(i => new SelectListItem()
-            {
-                Text = i.Nombre,
-                Value = i.Id.ToString()
-            });
+            var usuarioDesdeDb = _db.ApplicationUser.FirstOrDefault(u => u.Id == IdUsuario);
+            usuarioDesdeDb.LockoutEnd = DateTime.Now.AddMonths(6);
+            _db.SaveChanges();
         }
 
-        //El Update se utiliza en cada entidad (es algo unico), ya que sus parametros cambian dependiendo la tabla/modelo, por eso no va en el Repository generico.
-        public void Update(Categoria categoria)
+        public void DesbloquearUsuario(string IdUsuario)
         {
-            var objDesdeDb = _db.Categoria.FirstOrDefault(s => s.Id == categoria.Id);
-            objDesdeDb.Nombre = categoria.Nombre;
-            objDesdeDb.Orden = categoria.Orden;
+            var usuarioDesdeDb = _db.ApplicationUser.FirstOrDefault(u => u.Id == IdUsuario);
+            usuarioDesdeDb.LockoutEnd = DateTime.Now;
             _db.SaveChanges();
         }
     }

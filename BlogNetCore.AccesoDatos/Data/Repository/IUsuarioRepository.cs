@@ -6,9 +6,9 @@ using System.Text;
 
 namespace BlogNetCore.AccesoDatos.Data.Repository
 {
-    public interface ICategoriaRepository : IRepository<Categoria>
+    public interface IUsuarioRepository : IRepository<ApplicationUser>
     {
-        IEnumerable<SelectListItem> GetListaCategorias();
-        void Update(Categoria categoria);
+        void BloquearUsuario(string IdUsuario);
+        void DesbloquearUsuario(string IdUsuario);
     }
 }
