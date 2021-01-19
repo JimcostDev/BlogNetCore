@@ -489,3 +489,4 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.csproj.CoreCompileInputs.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Usuarios\Index.cshtml.g.cs
