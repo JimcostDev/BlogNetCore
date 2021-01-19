@@ -25,5 +25,27 @@ namespace BlogNetCore.Areas.Admin.Controllers
             return View(_contenedorTrabajo.Usuario.GetAll(u => u.Id != usuarioActual.Value));//lista de usuarios exeptuando el actual(login)
 
         }
+        #region BLOQUEAR
+        public IActionResult Bloquear(string id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            _contenedorTrabajo.Usuario.BloquearUsuario(id);
+            return RedirectToAction(nameof(Index));
+        }
+        #endregion
+        #region DESBLOQUEAR
+        public IActionResult Desbloquear(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            _contenedorTrabajo.Usuario.DesbloquearUsuario(id);
+            return RedirectToAction(nameof(Index));
+        }
+        #endregion
     }
 }
