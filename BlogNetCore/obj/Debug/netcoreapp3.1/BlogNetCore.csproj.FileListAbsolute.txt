@@ -1,6 +1,5 @@
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.StaticWebAssets.xml
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.exe
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\bin\Debug\netcoreapp3.1\BlogNetCore.deps.json
@@ -490,3 +489,4 @@ C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCo
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\BlogNetCore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Usuarios\Index.cshtml.g.cs
+C:\Users\Ronaldo Jimenez\Desktop\Cursos\Udemy\ASP.NET Core\BlogNetCore\BlogNetCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\BlogNetCore.styles.css
