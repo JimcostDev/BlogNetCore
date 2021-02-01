@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using BlogNetCore.Models;
+﻿using BlogNetCore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
 namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
 {
@@ -23,6 +20,7 @@ namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
             _signInManager = signInManager;
         }
 
+        [Display(Name = "Usuario")]
         public string Username { get; set; }
 
         [TempData]
@@ -34,12 +32,39 @@ namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Phone]
-            [Display(Name = "Phone number")]
+            [Display(Name = "Número de teléfono")]
             public string PhoneNumber { get; set; }
+            public string Nombre { get; set; }
+            public string Direccion { get; set; }
+            public string Ciudad { get; set; }
+            [Display(Name = "País")]
+            public string Pais { get; set; }
         }
 
-        private async Task LoadAsync(ApplicationUser user)
+        //private async Task LoadAsync(ApplicationUser user)
+        //{
+        //    var userName = await _userManager.GetUserNameAsync(user);
+        //    var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+
+        //    Username = userName;
+
+        //    Input = new InputModel
+        //    {
+        //        PhoneNumber = phoneNumber,
+        //        Nombre = user.Nombre,
+        //        Direccion = user.Direccion,
+        //        Ciudad = user.Ciudad,
+        //        Pais = user.Pais
+        //    };
+        //}
+
+        public async Task<IActionResult> OnGetAsync()
         {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound($"No se pudo cargar el usuario con ID '{_userManager.GetUserId(User)}'.");
+            }
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
 
@@ -47,19 +72,14 @@ namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Nombre = user.Nombre,
+                Direccion = user.Direccion,
+                Ciudad = user.Ciudad,
+                Pais = user.Pais
             };
-        }
 
-        public async Task<IActionResult> OnGetAsync()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-            {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
-            }
-
-            await LoadAsync(user);
+            //await LoadAsync(user);
             return Page();
         }
 
@@ -68,14 +88,14 @@ namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound($"No se pudo cargar el usuario con ID '{_userManager.GetUserId(User)}'.");
             }
 
-            if (!ModelState.IsValid)
-            {
-                await LoadAsync(user);
-                return Page();
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    await LoadAsync(user);
+            //    return Page();
+            //}
 
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
             if (Input.PhoneNumber != phoneNumber)
@@ -83,13 +103,20 @@ namespace BlogNetCore.Areas.Identity.Pages.Account.Manage
                 var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
                 if (!setPhoneResult.Succeeded)
                 {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
+                    StatusMessage = "Error inesperado al intentar establecer un número de teléfono.";
                     return RedirectToPage();
                 }
             }
 
+            user.PhoneNumber = Input.PhoneNumber;
+            user.Nombre = Input.Nombre;
+            user.Direccion = Input.Direccion;
+            user.Ciudad = Input.Ciudad;
+            user.Pais = Input.Pais;
+
+            await _userManager.UpdateAsync(user);
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = "Su perfil se ha actualizado.";
             return RedirectToPage();
         }
     }
