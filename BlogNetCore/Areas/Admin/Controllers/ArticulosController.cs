@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Hosting;
 using System;
 using System.IO;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlogNetCore.Areas.Admin.Controllers
 {
 
+    [Authorize]
     [Area("Admin")]
-
-
     public class ArticulosController : Controller
     {
         private readonly IContenedorTrabajo _contenedorTrabajo;
