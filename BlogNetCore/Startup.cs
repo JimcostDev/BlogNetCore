@@ -17,6 +17,7 @@ using BlogNetCore.AccesoDatos.Data.Repository.Implements;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using BlogNetCore.Utilidades;
 using BlogNetCore.Models;
+using BlogNetCore.AccesoDatos.Data.Inicializador;
 
 namespace BlogNetCore
 {
@@ -48,10 +49,13 @@ namespace BlogNetCore
             //agregar contenedor de trabajo
             services.AddScoped<IContenedorTrabajo, ContenedorTrabajo>();
 
+            //Data Seending (siembra de datos)
+            services.AddScoped<IInicializadorDB, InicializadorDB>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IInicializadorDB initDb)
         {
             if (env.IsDevelopment())
             {
@@ -68,7 +72,7 @@ namespace BlogNetCore
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            initDb.Inicializar();
             app.UseAuthentication();
             app.UseAuthorization();
 
